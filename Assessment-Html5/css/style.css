@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: blue;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px;
+}
+
+.container a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+.drop {
+    position: relative;
+}
+
+.drop:hover .inner {
+    opacity: 1;
+}
+
+
+.inner {
+    background: rgb(0, 0, 255);
+    opacity: 0;
+    position: absolute;
+    width: 112px;
+    top: 40px;
+    left: -28px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.281);
+    transition: .2s;
+}
+
+.more{
+    position: relative;
+}
+
+.more:hover .innerd{
+    opacity: 1;
+}
+
+.innerd{
+    position: absolute ;
+    background: blue;
+    top: -10px;
+    left: 100px;
+    opacity: 0;
+    transition: .2s;
+}
+
+
+   
+.inner a{
+   margin: 10px 0 0 0 ;
+   display: block;
+    border-bottom: 2px solid white;
+    width: 100%;
+    background: transparent;
+    padding: 5px;
+}
+
+.inner a:hover{
+    background: darkblue;
+}
+    
+
+
+
+
+
+button {
+    padding: 0px 15px;
+}
+
+
+.list {
+    display: flex;
+    gap: 40px;
+}
